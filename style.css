@@ -1,0 +1,139 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+
+}
+
+body{
+    background: rgb(175, 175, 246);
+
+}
+
+.main{
+    background: whitesmoke;
+    width: 70%;
+    max-width: 500px;
+    margin: 80px auto 0;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.main h1{
+    font-size: 25px;
+    font-weight: 400;
+    color: black;
+    border-bottom: 1px solid rgb(8, 8, 56);
+    padding-bottom: 25px;
+}
+
+.quiz{
+  padding: 20px 0;
+}
+
+.quiz h2{
+    font-size: 16px;
+    color: rgb(40, 40, 94);
+}
+
+.btn{
+    background: white;
+    color: rgb(10, 10, 50);
+    font-weight: 400;
+    width: 100%;
+    border:1px solid black;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn:hover:not([disabled]){
+    background-color: black;
+    color: azure;
+}
+
+.btn:disabled{
+    cursor: no-drop;
+}
+
+#next-btn{
+    background: rgb(4, 10, 57);
+    color:bisque;
+    font-weight: 400;
+    width: 50%;
+    border:0;
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+}
+
+.correct{
+    background: rgb(90, 187, 127);
+}
+
+.incorrect{
+    background: rgb(208, 113, 113);
+}
+
+/* Responsive Design */
+
+/* For devices with a max width of 768px (tablets and smaller) */
+@media (max-width: 768px) {
+    .main {
+        width: 90%; /* Make the container take up more width on smaller screens */
+        padding: 20px; /* Reduce padding */
+    }
+
+    .main h1 {
+        font-size: 20px; /* Reduce header size */
+        padding-bottom: 15px; /* Adjust spacing */
+    }
+
+    .quiz h2 {
+        font-size: 14px; /* Smaller text for quiz questions */
+    }
+
+    .btn {
+        padding: 8px; /* Reduce button padding */
+        font-size: 14px; /* Smaller button text */
+    }
+
+    #next-btn {
+        width: 70%; /* Adjust button width */
+        padding: 8px; /* Reduce padding */
+    }
+}
+
+/* For devices with a max width of 480px (mobile devices) */
+@media (max-width: 480px) {
+    .main {
+        margin: 40px auto 0; /* Reduce margin */
+        padding: 15px; /* Reduce padding further */
+    }
+
+    .main h1 {
+        font-size: 18px; /* Smaller header size for compact screens */
+    }
+
+    .quiz h2 {
+        font-size: 12px; /* Compact text size */
+    }
+
+    .btn {
+        padding: 6px; /* Compact button padding */
+        font-size: 12px; /* Compact button text */
+    }
+
+    #next-btn {
+        width: 80%; /* Wider button for easier interaction */
+        padding: 6px; /* Compact padding */
+    }
+}
+
+
+
