@@ -1,6 +1,6 @@
 const questions = [
     {
-        question: "Which is the longset river in thw world?",
+        question: "Which is the longset river in the world?",
         answers: [
             { text: "Niger", correct: false },
             { text: "Amazon", correct: false },
